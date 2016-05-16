@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link title="timeline-styles" rel="stylesheet" href="https://cdn.knightlab.com/libs/timeline3/latest/css/timeline.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap-theme.min.css">
+<script src="https://cdn.knightlab.com/libs/timeline3/latest/js/timeline.js"></script>
+<script src="https://fb.me/react-15.0.2.min.js"></script>
+<script src="https://fb.me/react-dom-15.0.2.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.8.23/browser.min.js"></script>
+<script> src="node_modules/whatwg-fetch/fetch.js"</script>
+</head>
+<body>
+
+  <div id="container"></div>
+  <div id="content"></div>
+  <div>
+  Game ID</div>
+        <form action="." method="POST">
+        <input type="text" name="text" placeholder="0041500116">
+        <input type="submit" name="my-form" value="Send">
+    </form>
+</body>
+
+
+<div id='timeline-embed' style="width: 100%; height: 600px"></div>
+
+<script type="text/javascript">
+
+
+var timeline_json = JSON.parse('{{data|tojson|safe}}')
+window.timeline = new TL.Timeline('timeline-embed', timeline_json);
+
+</script>
+</html>
