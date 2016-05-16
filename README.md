@@ -2,5 +2,6 @@
 
 ## skelton for react, flask and d3 platform
 
-`pip install -r requirement.txt`
-`npm install`
+`pip install -r requirement.txt`  
+`npm install`  
+`python app.py`  
